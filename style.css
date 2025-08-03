@@ -1,15 +1,72 @@
 body{
+    background-image: url('images/cozybackground.avif');
     background-color: #ffcccc;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0px;
 }
 
-h1{
+div.title{
     color: #666699;
+    background-color: #ffcccc;
+    border-style: groove;
+    border-color: #ba9eb5;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+div.main{
+    text-align: center;
+    color: #666699;
+    background-color: #ffcccc;
+    border-style: groove;
+    border-color: #ba9eb5;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 8px;
+}
+
+div.list{
+    background-color: #e0b8c2;
+    border-color: #ba9eb5;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 18px;
+    line-height: 1.5;
+    border-style: groove;
+    border-radius: 8px;
+}
+
+.pick{
+    background-color: #e0b8c2;
+    border-color: #ba9eb5;
     border-style: outset;
-    border-color: #e0b8c2;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
 }
 
-p{
-    color: #666699;
+.pick:hover{
+    background-color: #8c80a6;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
 }
