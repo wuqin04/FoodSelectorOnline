@@ -1,4 +1,4 @@
-<h1>Color Palette:</h1>
+<h1>Color Palette used in the website:</h1>
 <ul>
   <li>#ffcccc - Body background</li>
   <li>#e0b8c2 - Sections or boxes</li>
