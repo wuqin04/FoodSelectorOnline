@@ -1,0 +1,15 @@
+body{
+    background-color: #ffcccc;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    color: #666699;
+    border-style: outset;
+    border-color: #e0b8c2;
+    padding: 20px;
+}
+
+p{
+    color: #666699;
+}
