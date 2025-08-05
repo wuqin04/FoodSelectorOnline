@@ -26,6 +26,7 @@ This project is to choose the restaurant for SungaiLong UTAR Students because we
 10. TianXia Kopitiam
 11. YaZhou Kopitiam                  
 12. MeiMei Kopitiam
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DISCLAIMER -->
 ### Disclaimer
@@ -53,6 +54,5 @@ wuqin(Jimmy) - wuqin419@gmail.com
 
 Project Link: [https://github.com/wuqin04/FoodSelectorOnline](https://github.com/wuqin04/FoodSelectorOnline)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
