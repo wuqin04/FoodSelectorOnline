@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
     <head>
-        <title>Food Selector</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FoodSelector</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="title">
-            <h1>Food Selector</h1>
-        </div>
-        <div class="main">
-            <h2>List of Restaurant</h2>
-            <div class="list">
-                <ol>
-                    <li>Biji</li>
-                    <li>KFD</li>
-                    <li>杂饭之家</li>
-                    <li>Desa</li>
-                    <li>MickeyMouse</li>
-                    <li>BlackBoard</li>
-                    <li>Wallace</li>
-                    <li>BlueZone Kopitiam</li>
-                    <li>Taiwan Teahouse</li>
-                    <li>TianXia Kopitiam</li>
-                    <li>YaZhou Kopitiam</li> 
-                    <li>MeiMei Kopitiam</li>        
-                </ol>
+        <div class="container">
+            <div class="title">
+                <h1>🍽️ FoodSelector</h1>
+                <p>Let us choose the perfect restaurant for you!</p>
             </div>
-            <button type="button" class="pick" id="pick" onclick="pickFood()">Pick A Food</button>
-            <script src="scripts.js"></script>
             
+            <div class="main-panel">
+                <div class="restaurant-count">
+                    <h2>Restaurant List</h2>
+                    <p class="count-display">You have <span id="restaurant-count">0</span> restaurants in your list</p>
+                </div>
+                
+                <div class="restaurant-management">
+                    <div class="add-restaurant">
+                        <input type="text" id="restaurant-input" placeholder="Enter restaurant name..." maxlength="50">
+                        <button type="button" id="add-btn" onclick="addRestaurant()">➕ Add</button>
+                    </div>
+                </div>
+                
+                <div class="restaurant-list">
+                    <div id="restaurants-container">
+                        <!-- Restaurants will be loaded here -->
+                    </div>
+                </div>
+                
+                <div class="picker-section">
+                    <button type="button" class="pick-btn" id="pick-btn" onclick="pickRestaurant()">
+                        🎲 Pick a Restaurant
+                    </button>
+                    <div id="result-display" class="result-display hidden">
+                        <div class="result-content">
+                            <h3>🎉 Selected Restaurant:</h3>
+                            <div id="selected-restaurant" class="selected-restaurant"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
         </div>
+        
+        <script src="scripts.js"></script>
     </body>
 </html>
