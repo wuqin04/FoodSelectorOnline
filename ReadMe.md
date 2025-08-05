@@ -7,5 +7,15 @@
   <li>#666699 - Text</li>
 </ul>
 
-
+Biji
+杂饭之家
+Desa
+MickeyMouse
+BlackBoard
+Wallace                    
+BlueZone Kopitiam
+Taiwan Teahouse
+TianXia Kopitiam
+YaZhou Kopitiam                  
+MeiMei Kopitiam
 
