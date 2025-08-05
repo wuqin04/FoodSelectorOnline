@@ -7,6 +7,7 @@
   <li>#666699 - Text</li>
 </ul>
 
+<h1>Type of Restaurant available for you to choose</h1>
 Biji
 杂饭之家
 Desa
