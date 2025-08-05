@@ -9,6 +9,7 @@
 
 <h1>Type of Restaurant available for you to choose</h1>
 Biji
+KFD
 杂饭之家
 Desa
 MickeyMouse
