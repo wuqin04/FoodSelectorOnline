@@ -70,3 +70,21 @@ div.list{
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+.list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.list button{
+    background-color: #ba9eb5;
+    border-style: outset;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.list button:hover{
+    background-color: #8c80a6;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
