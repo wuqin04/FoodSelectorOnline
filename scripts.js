@@ -3,6 +3,7 @@ let restaurants = ["Biji", "杂饭之家", "Desa", "MickeyMouse", "BlackBoard", 
 
 function foodPanel() {
     const restaurantsList = document.querySelector(".list ol");
+    restaurantsList.textContent = "";
     let len = restaurants.length;
 
     for (let i = 0; i < len; i++) {
@@ -11,19 +12,31 @@ function foodPanel() {
         // text container
         const span = document.createElement("span");
         span.textContent = restaurants[i];
-        li.appendChild(span);
+
 
         // delete button
         const button = document.createElement("button");
         button.textContent = "X";
-        li.appendChild(button);
+        button.classList.add("remove-btn");
+        button.addEventListener("click", ()=> {
+            restaurants.splice(i, 1);
+            foodPanel();
+        })
+
 
         // append both text and button into the list
+        li.appendChild(span);
+        li.appendChild(button);
         restaurantsList.append(li);
     }
 }
 
 function pickFood() {
+    if (restaurants.length == 0) {
+        alert("Error: No restaurants available to pick from!");
+        return;
+    }
+    
     const random = Math.floor(Math.random() * restaurants.length);
     const selection = restaurants[random];
 
