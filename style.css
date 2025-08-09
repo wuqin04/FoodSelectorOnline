@@ -10,10 +10,6 @@ body{
     margin: 0px;
 }
 
-button{
-    width: 100%
-}
-
 div.title{
     color: #666699;
     background-color: #ffcccc;
@@ -79,7 +75,6 @@ div.list{
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    word-break: break-word;  
 }
 
 .list button{
@@ -92,10 +87,4 @@ div.list{
 .list button:hover{
     background-color: #8c80a6;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-@media (min-width: 600px) {
-    button {
-        width: auto;
-    }
 }
