@@ -31,16 +31,33 @@ function foodPanel() {
     }
 }
 
-function pickFood() {
+function pickRestaurant() {
     if (restaurants.length == 0) {
         alert("Error: No restaurants available to pick from!");
         return;
     }
-    
+
     const random = Math.floor(Math.random() * restaurants.length);
     const selection = restaurants[random];
 
     alert("The system picked " + selection + "!");
+}
+
+function addRestaurant() {
+    const newRest = prompt("Enter the name of restaurant:");
+
+    if (!newRest) {
+        alert("❌ Restaurant name cannot be empty!");
+        return;
+    }
+
+    if (restaurants.includes(newRest)) {
+        alert("⚠️ This restaurant is already in the list!");
+        return;
+    }
+
+    restaurants.push(newRest);
+    foodPanel();
 }
 
 document.addEventListener("DOMContentLoaded", foodPanel);
