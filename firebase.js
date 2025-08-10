@@ -19,7 +19,7 @@ const userGmail = localStorage.getItem("userGmail");
 if (!userGmail) {
     document.getElementById("gmail-modal").classList.add("show");
 
-    document.getElementById("gmail-modal").addEventListener("click", () => {
+    document.getElementById("save-gmail").addEventListener("click", () => {
         const gmail = document.getElementById("gmail-input").value.trim();
         if (gmail && gmail.includes("@gmail.com")) {
             localStorage.setItem("userGmail", gmail);
