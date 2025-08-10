@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
     <head>
         <title>Food Selector</title>
         <link rel="stylesheet" href="style.css">
@@ -9,6 +9,7 @@
         <div class="title">
             <h1>Food Selector</h1>
         </div>
+        
         <div class="main">
             <h2>List of Restaurant</h2>
 
@@ -19,6 +20,12 @@
             </div>
             <button type="button" class="pick" id="pick" onclick="pickRestaurant()">Pick A Restaurant</button>            
             <button type="button" class="add" id="add" onclick="addRestaurant()">Add Restaurant Into The List</button>
+            
+            <!-- Linking scripts and libraries here -->
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+            <script src="firebase.js"></script>
             <script src="scripts.js"></script>
         </div>
     </body>
