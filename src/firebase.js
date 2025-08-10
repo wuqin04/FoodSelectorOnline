@@ -17,10 +17,18 @@ firebase.initializeApp(firebaseConfig);
 const userGmail = localStorage.getItem("userGmail");
 
 if (!userGmail) {
-    const gmail = prompt("Enter your Gmail address:");
-    if (gmail) {
-        localStorage.setItem("userGmail", gmail);
-        firebase.database().ref("users").push({ email: gmail });
-        alert("Your Gmail has been saved!");
-    }
+    document.getElementById("gmail-modal").classList.add("show");
+
+    document.getElementById("gmail-modal").addEventListener("click", () => {
+        const gmail = document.getElementById("gmail-input").value.trim();
+        if (gmail && gmail.includes("@gmail.com")) {
+            localStorage.setItem("userGmail", gmail);
+            firebase.database().ref("users").push({ email: gmail });
+            alert("You are free to use the food selector now!");
+            document.getElementById("gmail-modal").classList.remove("show");
+        }
+        else {
+            alert("Please enter a valid Gmail Address!")
+        }
+    });
 }
